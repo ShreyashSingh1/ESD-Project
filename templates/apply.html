@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for {{ job.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Job Board</h1>
+    </header>
+    <div class="job-details">
+        <h1>Apply for {{ job.title }}</h1>
+        <!-- Your job application form here -->
+    </div>
+    <footer>
+        <p>&copy; 2023 Job Board</p>
+    </footer>
+</body>
+</html>

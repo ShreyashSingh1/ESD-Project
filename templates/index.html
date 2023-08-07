@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Job Board</h1>
+    </header>
+    <div class="job-listings">
+        <form action="/search" method="GET">
+            <input type="text" name="location" placeholder="Location">
+            <input type="text" name="job_type" placeholder="Job Type">
+            <input type="text" name="industry" placeholder="Industry">
+            <button type="submit">Search</button>
+        </form>
+        <!-- Display search results here -->
+    </div>
+    <footer>
+        <p>&copy; 2023 Job Board</p>
+    </footer>
+</body>
+</html>
